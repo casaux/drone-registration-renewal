@@ -14,7 +14,57 @@
          /* page specific js */
 
 
-      </script>
+
+             var drones=[
+               ["	DJI Phantom 4	","	MT3YA8PN9W2J5W	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4	","	2Y8O1SCZLWMTSF	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4	","	R247VLDEZ3Z4FD	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4	","	SJUHQEVL2FI1WW	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4	","	8QXIHDI9W8GHEW	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4 Pro	","	ZYZ8NN02NYIRB1	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Phantom 4 Pro	","	ET1KEEY5M26ZHI	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Mavic Air	","	Y7L5RCGPLPA6OK	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Inspire	","	71MYOMD38M3UM5	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Matrice 600 Pro	","	2693KS013OUVBO	","	01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Matrice 600 Pro	","	FZJZP3ONOJ19BI	","		01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+             ["	DJI Matrice 600 Pro	","	4ERTNMNV5TT1MD	","		01/10/2021   <span class='badge badge-warning m-b-1'>Expiring soon</span>	"],
+
+
+             ["	DJI Mavic Air 2	","	R1S6M164QIZ1TK	","	10/10/2021	"],
+             ["	DJI Mavic Air	","	IJ4DS4DZUULHLZ	","	10/10/2021	"],
+             ["	DJI Mavic Air	","	XWDIN2LW821ISZ	","	10/10/2021	"],
+             ["	DJI Mavic Air	","	UAO1TRL47LVJZK	","	10/10/2021	"],
+             ["	Autel Evo 2 Pro	","	DGNZ5SPH-1	","	10/10/2021	"],
+             ["	XAG P30 Plant Protection Drone	","	2CV3S	","	10/10/2021	"],
+             ["	Sunbirds SB4 Phoenix Solar-Powered Drone	","	9938182	","	10/10/2021	"],
+             ["	DJI Phantom 3	","	KLBXK474AKH7JN	","	10/10/2021	"],
+
+             ["	DJI Phantom 4	","	T3QQYPT2VEE2YU	","	01/01/2022	"],
+             ["	DJI Phantom 4	","	NSIN37NRECYUAO	","	01/01/2022	"]
+               /* ["	DJI Phantom 4	","	VRBU5FNKFUQ8UJ	","	15/10/2021	"],
+             ["	DJI Phantom 3	","	YXMFY6AL9JV7DV	","	15/10/2021	"]*/
+           ];
+
+                      var html="";
+                      var kill_rpa;
+                      var rpa_name;
+                      var rpa_serial;
+
+
+                       for(i=0;i<drones.length;i++){
+                         html+='<tr class="au-table__row">';
+                         html+='<td class="au-table__cell"><a href="#">'+drones[i][0]+'</a></td>';
+                         html+='<td class="au-table__cell">'+drones[i][1]+'</td>';
+                         html+='<td class="au-table__cell">'+drones[i][2]+'</td>';
+                         html+='<td class="au-table__cell"><a href="#" class="remove">Manage</a></td>';
+                         html+='</tr>';
+                       }
+
+                       $('document').ready(function(){
+                         $("tbody").append(html);
+                       });
+          </script>
+
    </head>
    <body class="live-demo au-body au-grid">
       <main class="au-grid">
@@ -97,49 +147,8 @@
                 <th scope="col" class="au-table__header au-table__header--width-25"> </th>
             </tr>
         </thead>
-        <tbody class="au-table__body"><!--
-            <tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Matrice 600 Pro (foreign registered)</a></td>
-				<td class="au-table__cell">V37JCBD7JR4FX4</td>
-				<td class="au-table__cell">01/01/2022</td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-            </tr>
-            <tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Inspire 2</a></td>
-				<td class="au-table__cell">LKHKHJ32A5NRV2</td>
-				<td class="au-table__cell">01/01/2022</td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-      </tr>-->
-			<tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Inspire 1</a></td>
-				<td class="au-table__cell">KFX3X9H9URFKJJ</td>
-				<td class="au-table__cell">01/01/2022</td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-            </tr>
-			<tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Mavic Pro</a></td>
-				<td class="au-table__cell">XRN8RSRMQA55MF</td>
-				<td class="au-table__cell">01/01/2022</td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-            </tr>
-			<tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">Yuneec Typhoon 4K</a></td>
-				<td class="au-table__cell">SSETL279U7QX2B</td>
-				<td class="au-table__cell">01/10/2021 <span class="badge badge-warning m-b-1">Expiring soon</span></td>
-				<td class="au-table__cell"><a href="#.html">Manage</a> </td>
-            </tr>
-		  	<tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Phantom 4 Pro</a></td>
-				<td class="au-table__cell">RLMBX8X9ZYK7U3</td>
-				<td class="au-table__cell">01/10/2021 <span class="badge badge-warning m-b-1">Expiring soon</span></td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-            </tr>
-	  		 <tr class="au-table__row">
-                <td class="au-table__cell"><a href="#.html">DJI Inspire 2</a></td>
-				<td class="au-table__cell">36XAF6PY63DD9L</td>
-				<td class="au-table__cell">01/10/2021 <span class="badge badge-warning m-b-1">Expiring soon</span></td>
-				<td class="au-table__cell"><a href="#.html">Manage</a></td>
-            </tr>
+        <tbody class="au-table__body">
+
         </tbody>
     </table>
 </div>
