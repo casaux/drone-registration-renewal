@@ -3,44 +3,44 @@
    <head>
       <meta charset="utf-8">
       <title>myCASA</title>
-      <meta name="viewport" content="width=device-width">
-      <meta name="viewport" content="initial-scale=1">
-       <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
-      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css"><link rel="stylesheet" href="style.css">
-      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
-      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
-      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
-	  <script type="text/javascript" src="va.js"></script>       <script type="text/javascript">
+      <meta name="viewport"content="width=device-width">
+      <meta name="viewport"content="initial-scale=1">
+       <link rel="stylesheet"href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet"href="../mycasa-src-3.0/css/casa.css"><link rel="stylesheet"href="style.css">
+      <script type="text/javascript"src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript"src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript"src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript"src="va.js"></script>       <script type="text/javascript">
          /* page specific js */
 
              var drones=[
-               ["	DJI Phantom 4	","	MT3YA8PN9W2J5W	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4	","	2Y8O1SCZLWMTSF	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4	","	R247VLDEZ3Z4FD	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4	","	SJUHQEVL2FI1WW	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4	","	8QXIHDI9W8GHEW	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4 Pro	","	ZYZ8NN02NYIRB1	","	01/10/2021 	 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
-             ["	DJI Phantom 4 Pro	","	ET1KEEY5M26ZHI	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Mavic Air	","	Y7L5RCGPLPA6OK	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Inspire	","	71MYOMD38M3UM5	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Matrice 600 Pro	","	2693KS013OUVBO	","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Matrice 600 Pro	","	FZJZP3ONOJ19BI	","		01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-            // ["	DJI Matrice 600 Pro	","	4ERTNMNV5TT1MD	","		01/10/2021 	","01/10/2022"],
+               ["DJI Phantom 4","MT3YA8PN9W2J5W","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4","2Y8O1SCZLWMTSF","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4","R247VLDEZ3Z4FD","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4","SJUHQEVL2FI1WW","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4","8QXIHDI9W8GHEW","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4 Pro","ZYZ8NN02NYIRB1","01/10/2021 	 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4 Pro","ET1KEEY5M26ZHI","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Mavic Air","Y7L5RCGPLPA6OK","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Inspire","71MYOMD38M3UM5","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Matrice 600 Pro","2693KS013OUVBO","01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Matrice 600 Pro","FZJZP3ONOJ19BI","	01/10/2021  <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+            // ["DJI Matrice 600 Pro","4ERTNMNV5TT1MD","	01/10/2021 ","01/10/2022"],
 
 
-             ["	DJI Mavic Air 2	","	R1S6M164QIZ1TK	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Mavic Air	","	IJ4DS4DZUULHLZ	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Mavic Air	","	XWDIN2LW821ISZ	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Mavic Air	","	UAO1TRL47LVJZK	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	Autel Evo 2 Pro	","	DGNZ5SPH-1	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	XAG P30 Plant Protection Drone	","	2CV3S	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	Sunbirds SB4 Phoenix Solar-Powered Drone	","	9938182	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 3	","	KLBXK474AKH7JN	","	10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
+             ["DJI Mavic Air 2","R1S6M164QIZ1TK","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Mavic Air","IJ4DS4DZUULHLZ","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Mavic Air","XWDIN2LW821ISZ","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Mavic Air","UAO1TRL47LVJZK","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["Autel Evo 2 Pro","DGNZ5SPH-1","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["XAG P30 Plant Protection Drone","2CV3S","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["Sunbirds SB4 Phoenix Solar-Powered Drone","9938182","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 3","KLBXK474AKH7JN","10/10/2021 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
 
-             ["	DJI Phantom 4	","	T3QQYPT2VEE2YU	","	01/01/2022 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"],
-             ["	DJI Phantom 4	","	NSIN37NRECYUAO	","	01/01/2022 <span class='badge badge-warning m-b-1'>Expiring soon</span>	","01/10/2022"]
-               /* ["	DJI Phantom 4	","	VRBU5FNKFUQ8UJ	","	15/10/2021	","01/10/2022"],
-             ["	DJI Phantom 3	","	YXMFY6AL9JV7DV	","	15/10/2021	"]*/
+             ["DJI Phantom 4","T3QQYPT2VEE2YU","01/01/2022 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"],
+             ["DJI Phantom 4","NSIN37NRECYUAO","01/01/2022 <span class='badge badge-warning m-b-1'>Expiring soon</span>","01/10/2022"]
+               /* ["DJI Phantom 4","VRBU5FNKFUQ8UJ","15/10/2021","01/10/2022"],
+             ["DJI Phantom 3","YXMFY6AL9JV7DV","15/10/2021"]*/
            ];
 
                       var html="";
@@ -76,8 +76,8 @@
                   <div class="casa-menu">
 
                   	<div id="dropdown-menu">
-						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
-						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu"href="#"><img src="../mycasa-src/img/menu.png"height="20"/>Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu"href="#"><img src="../mycasa-src/img/close.png"height="20"/>Close</a><br />
 						<br />
 						<p id="mycasa-home"><a href="#">myCASA home</a></p>
 						<p><a href="#">Switch profile</a></p>
@@ -100,7 +100,7 @@
 			</div>
 		</div>
          <div class="container">
-               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+               <nav class="au-breadcrumbs"aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
                     <li><a href="manage-rpa.html">Manage registered drones</a></li>
@@ -108,7 +108,7 @@
                   </ul>
                </nav>
 
-               <div role="alert" class="au-page-alerts au-page-alerts--information">
+               <div role="alert"class="au-page-alerts au-page-alerts--information">
                                        <div class="row">
                                           <div class="col-xs-12 col-md-12 col-lg-9">
                                              <h3>Drone removed from registration renewal</h3>
@@ -125,10 +125,10 @@
                                     </div>
 
 			     <div class="au-form-group">
-			           <header class="au-header" role="banner">
+			           <header class="au-header"role="banner">
                   <h1 class="break desktop au-header-heading">Renew drone registration</h1>
-                           <a class="au-direction-link" href="javascript:history.back()">
-                            <span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+                           <a class="au-direction-link"href="javascript:history.back()">
+                            <span class="au-direction-link__arrow au-direction-link__arrow--left"aria-hidden="true"></span>Back
                             </a>
                </header>
 
@@ -157,11 +157,11 @@
         <caption class="au-table__caption">Commercial drones and <abbr title="Remotely piloted aircraft">RPA</abbr></caption>
         <thead class="au-table__head">
             <tr class="au-table__row">
-              <th scope="col" class="au-table__header au-table__header--width-20">Drone</th>
-              <th scope="col" class="au-table__header au-table__header">Serial number / registration mark</th>
-              <th scope="col" class="au-table__header au-table__header">Expiry date</th>
-              <th scope="col" class="au-table__header au-table__header">New expiry date</th>
-              <th scope="col" class="au-table__header au-table__header5">Fee</th>
+              <th scope="col"class="au-table__header au-table__header--width-20">Drone</th>
+              <th scope="col"class="au-table__header au-table__header">Serial number / registration mark</th>
+              <th scope="col"class="au-table__header au-table__header">Expiry date</th>
+              <th scope="col"class="au-table__header au-table__header">New expiry date</th>
+              <th scope="col"class="au-table__header au-table__header5">Fee</th>
             </tr>
         </thead>
         <tbody class="au-table__body">
@@ -169,9 +169,9 @@
 
         <tfoot class="au-table__head">
           <tr class="au-table__row">
-            <td scope="col" class="au-table__header" colspan="3"></th>
-            <td scope="col" class="au-table__header au-table__header--numeric"><strong>Total:</strong></th>
-            <td scope="col" class="au-table__header au-table__header" colspan="2"><strong>$X.XX</strong></th>
+            <td scope="col"class="au-table__header"colspan="3"></th>
+            <td scope="col"class="au-table__header au-table__header--numeric"><strong>Total:</strong></th>
+            <td scope="col"class="au-table__header au-table__header"colspan="2"><strong>$X.XX</strong></th>
           </tr>
         </tfoot>
     </table>
@@ -191,7 +191,7 @@
                 I have read <a href="https://www.casa.gov.au/node/37026">CASA’s policy on the collection and release of information</a> and I authorise CASA to release information contained on this form in accordance with that policy.          			</p>
           		</p>
           					<label class="au-control-input">
-          					<input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="declaration">
+          					<input class="au-control-input__input"type="checkbox"name="checkbox-ex"id="declaration">
           						<span class="au-control-input__text form-text p-t-0">
           							I agree and understand the above conditions. </span>
           						</label> </p>
@@ -201,7 +201,7 @@
 
  <div class="form-navigation">
 
-   <a class="au-btn" href="payment.html">Proceed to payment</a>
+   <a class="au-btn"href="payment.html">Proceed to payment</a>
 
    <p>You will be directed to Westpac for payment</p>
 
@@ -219,7 +219,7 @@
           <div class="footer">
 
             <div class="footer-wrapper">
-               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+               <iframe src="../mycasa-src/footer.html"frameborder="0"border="0"scrolling="no"></iframe>
             </div>
          </div>
       </main>
